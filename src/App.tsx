@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 import NavBar from './components/NavBar/';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -15,9 +16,15 @@ export default function App() {
     <div className={`App ${!isDarkMode ? 'light' : ''}`}>
       <div className="container flow">
         <NavBar isDarkMode={isDarkMode} handleToggle={toggleTheme} />
-        <Home />
-        <Projects />
-        <About />
+        <Fade fraction={0.2} triggerOnce>
+          <Home />
+        </Fade>
+        <Fade fraction={0.2} triggerOnce>
+          <Projects />
+        </Fade>
+        <Fade fraction={0.2} triggerOnce>
+          <About />
+        </Fade>
       </div>
       <div className="contact">
         <Contact />
