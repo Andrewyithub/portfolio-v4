@@ -1,0 +1,162 @@
+:root {
+  --text: rgb(246, 254, 252);
+  --background: rgb(5, 41, 34);
+  --primary: rgb(236, 105, 129);
+  --secondary: rgb(59, 24, 7);
+  --accent: rgb(229, 42, 169);
+
+  /* Light mode */
+  --light-text: rgb(5, 41, 34);
+  --light-background: rgb(246, 254, 252);
+  --light-primary: rgb(236, 105, 129);
+  --light-secondary: rgb(251, 232, 223);
+  --light-accent: rgb(105, 13, 76);
+
+  --space: 3rem;
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Outfit', sans-serif;
+}
+
+.App,
+.menu {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* ? Spacing */
+.App {
+  margin: 0;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.container {
+  width: min(1280px, 100% - 2rem);
+  margin-inline: auto;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--space, 1rem);
+  /* outline: 1px solid red; */
+}
+
+/* ? Light and Dark mode colors */
+.light,
+.light .menu {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--accent);
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4 {
+  color: var(--light-accent);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.button__primary {
+  background-color: var(--primary);
+}
+
+.button__secondary {
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+.light .button__primary {
+  background-color: var(--light-primary);
+}
+
+.light .button__secondary {
+  background-color: var(--light-secondary);
+  color: var(--light-text);
+}
+
+/* ! Navbar CSS */
+.nav__item {
+  position: relative;
+  display: block;
+}
+
+@media only screen and (min-width: 800px) {
+  .nav__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -4px;
+    height: 4px;
+    border-radius: 16px;
+    transition: right 0.2s ease-in-out;
+  }
+
+  .nav__item:hover::before {
+    right: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgb(59, 24, 7) 0%,
+      rgb(229, 42, 169) 40%,
+      rgb(236, 105, 129) 80%
+    );
+  }
+
+  .light .nav__item:hover::before {
+    right: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgb(105, 13, 76) 0%,
+      rgb(236, 105, 129) 40%,
+      rgb(251, 232, 223) 80%
+    );
+  }
+}
+
+/* ! Card CSS */
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.techs div {
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: grid;
+  place-self: center;
+  background: var(--secondary);
+  border-radius: 0.5rem;
+}
+
+.light .techs div {
+  background: var(--light-secondary);
+}
+
+/* ! Contact CSS */
+.contact {
+  background-color: var(--accent);
+  margin-top: var(--space);
+}
+
+.light .contact {
+  background-color: var(--light-accent);
+  color: var(--text);
+}
+
+.contact h2 {
+  color: var(--text);
+}

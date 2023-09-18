@@ -1,0 +1,12 @@
+.contact {
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
