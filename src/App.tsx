@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
+import Skills from './components/Skills';
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -24,6 +25,9 @@ export default function App() {
         </Fade>
         <Fade fraction={0.2} triggerOnce>
           <About />
+        </Fade>
+        <Fade fraction={0.2} triggerOnce>
+          <Skills />
         </Fade>
       </div>
       <div className="contact">

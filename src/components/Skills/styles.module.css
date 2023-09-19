@@ -1,0 +1,14 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  font-size: 2rem;
+}

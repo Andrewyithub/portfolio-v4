@@ -27,7 +27,9 @@ export default function Card({ project }: CardProps) {
         <h3>{project.name}</h3>
         <div className={`techs`}>
           {project.techs.map((item, i) => (
-            <div key={i}>{item}</div>
+            <div key={i} className="body2">
+              {item}
+            </div>
           ))}
         </div>
         <p>{project.desc}</p>
