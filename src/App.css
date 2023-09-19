@@ -12,12 +12,39 @@
   --light-secondary: rgb(251, 232, 223);
   --light-accent: rgb(105, 13, 76);
 
+  /* Type */
+  --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+  --step--1: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.9rem);
+  --step-0: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --step-1: clamp(1.2rem, calc(1.13rem + 0.36vw), 1.41rem);
+  --step-2: clamp(1.44rem, calc(1.33rem + 0.55vw), 1.76rem);
+  --step-3: clamp(1.73rem, calc(1.56rem + 0.82vw), 2.2rem);
+  --step-4: clamp(2.07rem, calc(1.84rem + 1.17vw), 2.75rem);
+  --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
+
   --space: 3rem;
 }
 
+h1 {
+  font-size: var(--step-4);
+}
+h2 {
+  font-size: var(--step-3);
+}
+h3 {
+  font-size: var(--step-2);
+}
+h4 {
+  font-size: var(--step-1);
+}
+
+p {
+  font-size: var(--step-0);
+}
+
 body {
-  line-height: 1.6;
-  font-family: 'Outfit', sans-serif;
+  line-height: 1.7;
+  font-family: "Outfit", sans-serif;
 }
 
 .App,
@@ -95,7 +122,7 @@ button {
 
 @media only screen and (min-width: 800px) {
   .nav__item::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 100%;
@@ -157,6 +184,6 @@ button {
   color: var(--text);
 }
 
-.contact h2 {
+.contact h4 {
   color: var(--text);
 }
