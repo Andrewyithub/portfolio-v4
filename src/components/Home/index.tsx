@@ -15,7 +15,11 @@ export default function Home() {
             fontSize: '1.5rem',
           }}
           cursorColor="#1da1f2"
-          multiText={['Software Engineer', "Don't Forget to Scroll"]}
+          multiText={[
+            'Software Engineer',
+            'Welcome to my portfolio',
+            'Feel free to explore',
+          ]}
           multiTextLoop={true}
           multiTextDelay={1500}
           typeSpeed={35}

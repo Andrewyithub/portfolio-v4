@@ -13,17 +13,17 @@ interface NavBarProps {
 const navItems = (
   <>
     <div>
-      <a href="#" className={`nav__item`}>
+      <a href="#work" className={`nav__item`}>
         Work
       </a>
     </div>
     <div>
-      <a href="#" className={`nav__item`}>
+      <a href="#about" className={`nav__item`}>
         About
       </a>
     </div>
     <div>
-      <a href="#" className={`nav__item`}>
+      <a href="#contact" className={`nav__item`}>
         Contact
       </a>
     </div>
@@ -35,7 +35,6 @@ export default function NavBar({ isDarkMode, handleToggle }: NavBarProps) {
   return (
     <>
       <nav className="container">
-        {/* <div className={styles.nav__social}>{Socials}</div> */}
         <div onClick={() => setOpen(!open)} className={styles.hamburger}>
           {open ? <MdClose /> : <GiHamburgerMenu />}
         </div>

@@ -1,20 +1,19 @@
+import styles from './styles.module.css';
+
 export default function About() {
   return (
-    <div id="about">
+    <div id="about" className={`flow ${styles.about__flow}`}>
       <h2>Get to Know Me</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nihil
-        dolor esse veritatis, inventore ipsum quibusdam tempora delectus. Odio
-        explicabo perspiciatis quisquam dicta error delectus obcaecati eligendi
-        nemo tempore tenetur suscipit, ipsam possimus laudantium eaque
-        recusandae quis consequuntur nesciunt esse quod consequatur vero.
-        Possimus atque cum magnam laudantium. Perferendis esse fugiat odio
-        officiis nemo perspiciatis, minima ipsum quam recusandae, pariatur
-        asperiores, velit non maxime repellendus optio deserunt alias ut odit
-        tempore dolorum autem excepturi obcaecati mollitia voluptates. Dicta
-        laborum, corrupti tenetur eligendi ipsa perferendis! Maiores repellat
-        consectetur odio necessitatibus! Tenetur sit vitae dolorem corrupti
-        rerum saepe possimus impedit asperiores aliquam.
+        As a Full Stack Software Engineer, I'm not just a coder – I'm a problem
+        solver. I enjoy tackling complex challenges head-on, whether it's
+        optimizing application performance, debugging intricate issues, or
+        brainstorming innovative solutions.
+      </p>
+      <p>
+        In the fast-paced world of technology, learning is a never-ending
+        journey. I'm dedicated to staying updated with the latest trends,
+        frameworks, and tools in the software development landscape.
       </p>
     </div>
   );

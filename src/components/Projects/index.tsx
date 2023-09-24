@@ -3,7 +3,7 @@ import { projects } from '../../data/projects';
 
 export default function Projects() {
   return (
-    <div>
+    <div id="work">
       <h2>Recent Work</h2>
 
       <div className={`flow`}>

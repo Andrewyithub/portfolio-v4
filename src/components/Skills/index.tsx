@@ -18,11 +18,10 @@ const skills = [
   { id: 3, name: 'CSS', icon: <SiCss3 /> },
   { id: 4, name: 'React', icon: <SiReact /> },
   { id: 5, name: 'Node JS', icon: <SiNodedotjs /> },
-  { id: 6, name: 'Figma', icon: <SiFigma /> },
-  { id: 7, name: 'Mongo DB', icon: <SiMongodb /> },
-  { id: 8, name: 'Firebase', icon: <SiFirebase /> },
-  { id: 9, name: 'Typescript', icon: <SiTypescript /> },
-  { id: 10, name: 'Next JS', icon: <SiNextdotjs /> },
+  { id: 6, name: 'Mongo DB', icon: <SiMongodb /> },
+  { id: 7, name: 'Firebase', icon: <SiFirebase /> },
+  { id: 8, name: 'Typescript', icon: <SiTypescript /> },
+  { id: 9, name: 'Next JS', icon: <SiNextdotjs /> },
 ];
 
 export default function Skills() {

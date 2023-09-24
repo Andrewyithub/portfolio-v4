@@ -22,7 +22,7 @@
   --step-4: clamp(2.07rem, calc(1.84rem + 1.17vw), 2.75rem);
   --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
 
-  --space: 3rem;
+  --space: 4rem;
 }
 
 h1,
@@ -56,7 +56,7 @@ p {
 
 body {
   line-height: 1.7;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 .App,
@@ -68,7 +68,7 @@ body {
 /* ? Spacing */
 .App {
   margin: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
   height: fit-content;
 }
 
@@ -79,7 +79,6 @@ body {
 
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--space, 1rem);
-  /* outline: 1px solid red; */
 }
 
 /* ? Light and Dark mode colors */
@@ -144,7 +143,7 @@ button {
 
 @media only screen and (min-width: 800px) {
   .nav__item::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     right: 100%;
