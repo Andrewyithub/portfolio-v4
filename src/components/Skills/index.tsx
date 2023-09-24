@@ -5,7 +5,6 @@ import {
   SiCss3,
   SiReact,
   SiNodedotjs,
-  SiFigma,
   SiMongodb,
   SiFirebase,
   SiTypescript,
