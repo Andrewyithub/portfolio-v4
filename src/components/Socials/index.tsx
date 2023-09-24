@@ -9,17 +9,17 @@ const Socials = (
       </a>
     </div>
     <div>
-      <a href="">
+      <a href="https://github.com/Andrewyithub">
         <FiGithub />
       </a>
     </div>
     <div>
-      <a href="">
+      <a href="https://twitter.com/a_ydev">
         <FiTwitter />
       </a>
     </div>
     <div>
-      <a href="">
+      <a href="https://www.linkedin.com/in/andrewydev/">
         <FiLinkedin />
       </a>
     </div>

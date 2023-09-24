@@ -1,10 +1,9 @@
-import styles from "./styles.module.css";
-import { useState } from "react";
-import { FaSun, FaMoon } from "react-icons/fa";
-import Socials from "../Socials";
+import styles from './styles.module.css';
+import { useState } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdClose } from 'react-icons/md';
 
 interface NavBarProps {
   isDarkMode: boolean;
@@ -46,9 +45,9 @@ export default function NavBar({ isDarkMode, handleToggle }: NavBarProps) {
         </div>
       </nav>
       <div
-        className={`container ${open ? styles.open : ""} ${styles.transition}`}
+        className={`container ${open ? styles.open : ''} ${styles.transition}`}
       >
-        <div className={`menu ${open ? styles.open : ""} ${styles.menu}`}>
+        <div className={`menu ${open ? styles.open : ''} ${styles.menu}`}>
           {navItems}
         </div>
       </div>
