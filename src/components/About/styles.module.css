@@ -1,3 +1,12 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  @media only screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
 .about__flow {
   --space: 1rem;
 }

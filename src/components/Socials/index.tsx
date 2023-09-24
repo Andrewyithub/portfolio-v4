@@ -1,13 +1,7 @@
-import { CgProfile } from 'react-icons/cg';
 import { FiGithub, FiTwitter, FiLinkedin } from 'react-icons/fi';
 
 const Socials = (
   <>
-    <div>
-      <a href="#about">
-        <CgProfile />
-      </a>
-    </div>
     <div>
       <a href="https://github.com/Andrewyithub">
         <FiGithub />

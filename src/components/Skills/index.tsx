@@ -25,7 +25,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div>
+    <>
       <h2>My Skills</h2>
       <div className={styles.skills}>
         {skills.map((skill) => (
@@ -35,6 +35,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }

@@ -181,7 +181,7 @@ button {
 }
 
 .techs div {
-  padding: 0.4rem;
+  padding: 0.4rem 0.75rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   display: grid;

@@ -1,12 +1,11 @@
-import "./App.css";
-import { useState } from "react";
-import { Fade } from "react-awesome-reveal";
-import NavBar from "./components/NavBar/";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Skills from "./components/Skills";
+import './App.css';
+import { useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
+import NavBar from './components/NavBar/';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import About from './components/About';
+import Contact from './components/Contact';
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -14,7 +13,7 @@ export default function App() {
   const toggleTheme = () => setIsDarkMode((prevMode) => !prevMode);
 
   return (
-    <div className={`App ${!isDarkMode ? "light" : ""}`}>
+    <div className={`App ${!isDarkMode ? 'light' : ''}`}>
       <NavBar isDarkMode={isDarkMode} handleToggle={toggleTheme} />
       <div className="container flow">
         <Fade fraction={0.2} triggerOnce>
@@ -25,9 +24,6 @@ export default function App() {
         </Fade>
         <Fade fraction={0.2} triggerOnce>
           <About />
-        </Fade>
-        <Fade fraction={0.2} triggerOnce>
-          <Skills />
         </Fade>
       </div>
       <div className="contact">
