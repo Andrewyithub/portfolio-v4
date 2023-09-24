@@ -1,11 +1,11 @@
 nav {
   /* spacing */
   gap: 1rem;
-  padding: 1rem;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-block: 2rem;
 }
 
 .nav__lg {
@@ -21,8 +21,33 @@ nav {
   cursor: pointer;
 }
 
+.menu {
+  display: none;
+}
+
+.open.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
+.transition {
+  transform: translateY(-40rem);
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.open.transition {
+  transform: translateY(0);
+}
+
 @media only screen and (min-width: 800px) {
-  .hamburger__button {
+  .hamburger {
     display: none;
   }
   .nav__lg {

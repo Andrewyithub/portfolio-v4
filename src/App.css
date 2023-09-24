@@ -30,6 +30,7 @@ h2,
 h3,
 h4 {
   font-weight: 900;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -55,7 +56,7 @@ p {
 
 body {
   line-height: 1.7;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .App,
@@ -105,10 +106,12 @@ h4 {
 button {
   cursor: pointer;
   border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .button__primary {
   background-color: var(--primary);
+  margin-right: 0.5rem;
 }
 
 .button__secondary {
@@ -126,6 +129,14 @@ button {
 }
 
 /* ! Navbar CSS */
+.menu {
+  border-bottom: solid var(--text);
+}
+
+.light .menu {
+  border-bottom: solid var(--light-text);
+}
+
 .nav__item {
   position: relative;
   display: block;
@@ -133,7 +144,7 @@ button {
 
 @media only screen and (min-width: 800px) {
   .nav__item::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     right: 100%;

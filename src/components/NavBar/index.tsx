@@ -1,6 +1,10 @@
-import styles from './styles.module.css';
-import { FaSun, FaMoon } from 'react-icons/fa';
-import Socials from '../Socials';
+import styles from "./styles.module.css";
+import { useState } from "react";
+import { FaSun, FaMoon } from "react-icons/fa";
+import Socials from "../Socials";
+
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdClose } from "react-icons/md";
 
 interface NavBarProps {
   isDarkMode: boolean;
@@ -28,15 +32,26 @@ const navItems = (
 );
 
 export default function NavBar({ isDarkMode, handleToggle }: NavBarProps) {
+  const [open, setOpen] = useState(false);
   return (
     <>
-      <nav>
-        <div className={styles.nav__social}>{Socials}</div>
+      <nav className="container">
+        {/* <div className={styles.nav__social}>{Socials}</div> */}
+        <div onClick={() => setOpen(!open)} className={styles.hamburger}>
+          {open ? <MdClose /> : <GiHamburgerMenu />}
+        </div>
         <div className={styles.nav__lg}>{navItems}</div>
         <div onClick={handleToggle} className={styles.theme__switch}>
           {isDarkMode ? <FaMoon /> : <FaSun />}
         </div>
       </nav>
+      <div
+        className={`container ${open ? styles.open : ""} ${styles.transition}`}
+      >
+        <div className={`menu ${open ? styles.open : ""} ${styles.menu}`}>
+          {navItems}
+        </div>
+      </div>
     </>
   );
 }
