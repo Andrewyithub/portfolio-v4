@@ -4,7 +4,8 @@ Code for my portfolio site.
 
 **Link to project:** https://andrewy.me
 
-![alt tag](https://github.com/Andrewyithub/portfolio-v4/assets/17731837/926bc981-808d-4466-a4f7-e9140ae83d82)
+![alt tag](https://github.com/Andrewyithub/portfolio-v4/assets/17731837/20ad395f-82e6-462b-ab8d-7830748d99e0)
+
 ## How It's Made:
 ![portfolio-macbook]()
 
