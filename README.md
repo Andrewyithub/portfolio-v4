@@ -4,7 +4,7 @@ Code for my portfolio site.
 
 **Link to project:** https://andrewy.me
 
-![alt tag]()
+![alt tag](https://github.com/Andrewyithub/portfolio-v4/assets/17731837/06b31f21-2694-4b69-9a3b-80e978b055ae)
 
 ## How It's Made:
 
