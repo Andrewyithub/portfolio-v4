@@ -4,9 +4,10 @@ Code for my portfolio site.
 
 **Link to project:** https://andrewy.me
 
-![alt tag]()
+![alt tag](https://github.com/Andrewyithub/portfolio-v4/assets/17731837/20ad395f-82e6-462b-ab8d-7830748d99e0)
 
 ## How It's Made:
+![portfolio-macbook]()
 
 **Frontend:** TypeScript, React
 
