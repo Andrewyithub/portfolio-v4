@@ -8,7 +8,7 @@ Code for my portfolio site.
 
 ## How It's Made:
 
-**Frontend:** TypeScript, React
+**Frontend:** TypeScript, React, Vite
 
 ## How to Run:
 
