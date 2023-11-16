@@ -11,7 +11,7 @@ export const projects = [
     name: 'Spruce Street',
     desc: 'Web page for a local plant store.',
     liveLink: 'https://spruce-street.netlify.app',
-    githubLink: 'https://github.com/Andrewyithub/spruce-street',
+    githubLink: 'https://github.com/Andrewy-gh/spruce-street',
     techs: ['React', 'Typescript', 'Tailwind CSS', 'Node', 'MongoDB', 'Vite'],
     smallImg: spruceSm,
     largeImg: spruceLg,
@@ -21,7 +21,7 @@ export const projects = [
     name: 'Takashi Photography',
     desc: 'A Portfolio site for an international photographer. Drag and drop images for organization. Images optimized via Cloudinary CDN. Authentication secured by JWT.',
     liveLink: 'https://takashi-photos.fly.dev',
-    githubLink: 'https://github.com/Andrewyithub/takashi-portfolio-full-stack',
+    githubLink: 'https://github.com/Andrewy-gh//takashi-portfolio-full-stack',
     techs: [
       'React',
       'Node',
@@ -41,7 +41,7 @@ export const projects = [
     name: 'Cut Above Barbershop',
     desc: 'Barbershop web page. Features booking of appointments, user account registration, appointment modification, and email services. Authentication secured by JWT. Material UI components. Redux for state management and data fetching.',
     liveLink: 'http://cutaboveshop.fly.dev',
-    githubLink: 'https://github.com/Andrewyithub/cut-above-barbershop',
+    githubLink: 'https://github.com/Andrewy-gh//cut-above-barbershop',
     techs: [
       'React',
       'Node',
