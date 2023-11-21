@@ -18,11 +18,13 @@ interface Project {
 export default function Card({ project }: CardProps) {
   return (
     <div className={styles.card}>
-      <picture>
-        <source media="(max-width: 799px)" srcSet={project.smallImg} />
-        <source media="(min-width: 800px)" srcSet={project.largeImg} />
-        <img src={project.largeImg} alt="placeholder" />
-      </picture>
+      <a href={project.liveLink}>
+        <picture>
+          <source media="(max-width: 799px)" srcSet={project.smallImg} />
+          <source media="(min-width: 800px)" srcSet={project.largeImg} />
+          <img src={project.largeImg} alt="placeholder" />
+        </picture>
+      </a>
       <div className={`flow ${styles.card__flow}`}>
         <h3>{project.name}</h3>
         <div className={`techs`}>
