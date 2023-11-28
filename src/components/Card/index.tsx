@@ -27,6 +27,14 @@ export default function Card({ project }: CardProps) {
       </a>
       <div className={`flow ${styles.card__flow}`}>
         <h3>{project.name}</h3>
+        <p>{project.desc}</p>
+        <button className={`button__primary`}>
+          <a href={project.liveLink}>Check out the Site</a>
+        </button>
+        <button className={`button__secondary`}>
+          <a href={project.githubLink}>Check out the Code</a>
+        </button>
+        <h4>Featured Tech:</h4>
         <div className={`techs`}>
           {project.techs.map((item, i) => (
             <div key={i} className="body2">
@@ -34,13 +42,6 @@ export default function Card({ project }: CardProps) {
             </div>
           ))}
         </div>
-        <p>{project.desc}</p>
-        <button className={`button__primary`}>
-          <a href={project.liveLink}>Live</a>
-        </button>
-        <button className={`button__secondary`}>
-          <a href={project.githubLink}>Github</a>
-        </button>
       </div>
     </div>
   );
