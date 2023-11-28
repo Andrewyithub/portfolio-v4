@@ -4,6 +4,7 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
+import Socials from '../Socials';
 
 interface NavBarProps {
   isDarkMode: boolean;
@@ -22,11 +23,7 @@ const navItems = (
         About
       </a>
     </div>
-    <div>
-      <a href="#contact" className={`nav__item`}>
-        Contact
-      </a>
-    </div>
+    <div className={styles.nav__social}>{Socials}</div>
   </>
 );
 
