@@ -34,14 +34,16 @@ export default function Card({ project }: CardProps) {
         <button className={`button__secondary`}>
           <a href={project.githubLink}>Check out the Code</a>
         </button>
-        <h4>Featured Tech:</h4>
-        <div className={`techs`}>
-          {project.techs.map((item, i) => (
-            <div key={i} className="body2">
-              {item}
-            </div>
-          ))}
-        </div>
+        <details>
+          <summary>Featured Tech:</summary>
+          <div className={`techs`}>
+            {project.techs.map((item, i) => (
+              <div key={i} className="body2">
+                {item}
+              </div>
+            ))}
+          </div>
+        </details>
       </div>
     </div>
   );
